@@ -13,7 +13,8 @@ Console.WriteLine("Введите координату Y точки 2: ");
 int b2 = Convert.ToInt32(Console.ReadLine());
 
 double result = Distance(a1, a2, b1, b2);
-Console.WriteLine($"Расстояние между точками: {result}");
+double resultRound = Math.Round(result, 2, MidpointRounding.ToZero);
+Console.WriteLine($"Расстояние между точками: {resultRound}");
 
 double Distance(int x1, int y1, int x2, int y2)
 {
