@@ -9,23 +9,39 @@ int xCoordinate = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Y: ");
 int yCoordinate = Convert.ToInt32(Console.ReadLine());
 
-if (xCoordinate > 0 && yCoordinate > 0)
+// if (xCoordinate > 0 && yCoordinate > 0)
+// {
+//     Console.WriteLine("Указанные координаты соответствуют четверти 1");
+// }
+// else if (xCoordinate < 0 && yCoordinate > 0)
+// {
+//     Console.WriteLine("Указанные координаты соответствуют четверти 2");
+// }
+// else if (xCoordinate < 0 && yCoordinate < 0)
+// {
+//     Console.WriteLine("Указанные координаты соответствуют четверти 3");
+// }
+// else if (xCoordinate > 0 && yCoordinate < 0)
+// {
+//     Console.WriteLine("Указанные координаты соответствуют четверти 4");
+// }
+// else
+// {
+//     Console.WriteLine("Введены некорректные координаты");
+// }
+
+int quarter = Quarter(45, 76);
+string result = quarter > 0
+            ? $"Указанные координаты соответствуют четверти {quarter}"
+            : "Введены некорректные координаты";
+
+Console.WriteLine(result);
+
+int Quarter(int x, int y) // x = 4, y = 5
 {
-    Console.WriteLine("Указанные координаты соответствуют четверти 1");
-}
-else if (xCoordinate < 0 && yCoordinate > 0)
-{
-    Console.WriteLine("Указанные координаты соответствуют четверти 2");
-}
-else if (xCoordinate < 0 && yCoordinate < 0)
-{
-    Console.WriteLine("Указанные координаты соответствуют четверти 3");
-}
-else if (xCoordinate > 0 && yCoordinate < 0)
-{
-    Console.WriteLine("Указанные координаты соответствуют четверти 4");
-}
-else
-{
-    Console.WriteLine("Введены некорректные координаты");
+    if (x > 0 && y > 0) return 1;
+    if (x < 0 && y > 0) return 2;
+    if (x < 0 && y < 0) return 3;
+    if (x > 0 && y < 0) return 4;
+    return 0;
 }
