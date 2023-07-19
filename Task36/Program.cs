@@ -17,8 +17,6 @@ for (int i = 1; i < numbers.Length; i += 2)
 }
 Console.Write(sumNumbersEvenIndex);
 
-
-
 void FillArrayRandomNumbers(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
