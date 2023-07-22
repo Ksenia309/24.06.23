@@ -18,13 +18,13 @@ FillArrayRandomNumbers(numbers);
 
 for (int j = 0; j < numbers.GetLength(1); j++)
 {
-    double avarage = 0;
+    double average = 0;
     for (int i = 0; i < numbers.GetLength(0); i++)
     {
-        avarage = (avarage + numbers[i, j]);
+        average = (average + numbers[i, j]);
     }
-    avarage = avarage / n;
-    Console.Write(avarage + "; ");
+    average = average / n;
+    Console.Write(average + "; ");
 }
 Console.WriteLine();
 PrintArray(numbers);
