@@ -6,7 +6,7 @@
 // 66(0,0,0) 25(0,1,0) 27(0,0,1) 90(0,1,1)
 // 34(1,0,0) 41(1,1,0) 26(1,0,1) 55(1,1,1)
 
-Console.WriteLine($"\nВведите размер массива X x Y x Z:");
+Console.WriteLine($"Введите размер массива X x Y x Z:");
 int x = InputNumbers("Введите X: ");
 int y = InputNumbers("Введите Y: ");
 int z = InputNumbers("Введите Z: ");
