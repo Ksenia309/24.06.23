@@ -27,4 +27,3 @@ else
 {
 Console.Write($"{num1} ");
 }
-}
